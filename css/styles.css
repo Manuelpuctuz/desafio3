@@ -1,0 +1,162 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #e8f4fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 900px;
+  max-width: 95%;
+}
+
+/* Left Form Section */
+.form-section {
+  flex: 1;
+  padding: 40px;
+}
+
+.form-section h2 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: #1e2b3a;
+  display: flex;
+  justify-content: space-between;
+}
+
+.clear-link {
+  font-size: 14px;
+  color: #6b7280;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.currency-input,
+.unit-input {
+  display: flex;
+  align-items: center;
+  background-color: #f4f9ec;
+  border: 2px solid #d2d6dc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.currency-input span,
+.unit-input span {
+  background-color: #cde636;
+  padding: 10px 14px;
+  font-weight: 600;
+}
+
+.currency-input input,
+.unit-input input {
+  border: none;
+  padding: 12px;
+  flex: 1;
+  font-size: 16px;
+  background-color: transparent;
+  outline: none;
+}
+
+.input-row {
+  display: flex;
+  gap: 16px;
+}
+
+.mortgage-type {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.radio-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #f9fafa;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.radio-btn input[type="radio"] {
+  accent-color: #cde636;
+}
+
+.radio-btn:hover {
+  background-color: #f0f5e8;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #cde636;
+  color: #1a202c;
+  font-weight: 600;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #bddf34;
+}
+
+/* Right Result Section */
+.result-section {
+  flex: 1;
+  background-color: #132c3f;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-section img {
+  width: 140px;
+  margin-bottom: 20px;
+}
+
+.result-section h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.result-section p {
+  font-size: 14px;
+  color: #cbd5e1;
+  max-width: 280px;
+}

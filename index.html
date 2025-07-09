@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+ <div class="container">
+    <!-- Form Section -->
+    <section class="form-section">
+      <h2>
+        Mortgage Calculator
+        <span class="clear-link" onclick="clearAll()">Clear All</span>
+      </h2>
+
+      <form id="mortgageForm">
+        <!-- Mortgage Amount -->
+        <div class="input-group">
+          <label for="amount">Mortgage Amount</label>
+          <div class="currency-input">
+            <span>$</span>
+            <input type="number" id="amount" placeholder="300000" required />
+          </div>
+        </div>
+
+        <!-- Term & Rate -->
+        <div class="input-row">
+          <div class="input-group">
+            <label for="term">Mortgage Term</label>
+            <div class="unit-input">
+              <input type="number" id="term" placeholder="25" required />
+              <span>years</span>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="rate">Interest Rate</label>
+            <div class="unit-input">
+              <input type="number" id="rate" placeholder="5.25" step="0.01" required />
+              <span>%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mortgage Type -->
+        <div class="input-group">
+          <label>Mortgage Type</label>
+          <div class="mortgage-type">
+            <label class="radio-btn">
+              <input type="radio" name="type" value="repayment" checked />
+              Repayment
+            </label>
+            <label class="radio-btn">
+              <input type="radio" name="type" value="interest" />
+              Interest Only
+            </label>
+          </div>
+        </div>
+
+        <!-- Calculate Button -->
+        <button type="submit">
+          <img src="assets/images/icon-calculator.svg" alt="calculadora">
+    Calculate Repayments
+          
+        </button>
+      </form>
+    </section>
+
+    <!-- Results Section -->
+
+    <section class="result-section">
+      your results are shown below based on the infotmation
+      <hr>
+      <img src="assets/images/illustration-empty.svg" alt="Result Illustration" />
+      <h3>Results shown here</h3>
+      <p id="resultText">
+        Complete el formulario y haga clic en "calcular reembolsos" para ver cuáles serían sus pagos mensuales.
+      </p>
+    </section>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
